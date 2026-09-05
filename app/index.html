@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4efdf" />
+    <meta name="description" content="A completely normal game of tic-tac-toe. You are X. The house is O. Nobody cheats — that's the gimmick." />
+    <title>Tic Tac Fair — Nobody Cheats</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="ticker" aria-hidden="true">
+      <div>
+        <span>★ CERTIFIED FAIR ★ WHAT YOU PLAY STAYS PLAYED ★ NO CELLS WERE STOLEN IN THE MAKING OF THIS GAME ★ THE REFEREE IS UNEMPLOYED AND THRIVING ★ ODDS OF A RIGGED OUTCOME: 0.00% ★&nbsp;</span>
+        <span>★ CERTIFIED FAIR ★ WHAT YOU PLAY STAYS PLAYED ★ NO CELLS WERE STOLEN IN THE MAKING OF THIS GAME ★ THE REFEREE IS UNEMPLOYED AND THRIVING ★ ODDS OF A RIGGED OUTCOME: 0.00% ★&nbsp;</span>
+      </div>
+    </div>
+
+    <header class="masthead">
+      <p class="brand">THE FAIR HOUSE</p>
+      <p class="house-status"><span></span>AUDITOR: AWAKE</p>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">NOTHING UP<br />OUR <span>SLEEVES.</span></h1>
+        <p class="lede">You're X. The house is O. Normal rules apply to everyone. That's the whole gimmick.</p>
+      </section>
+
+      <section class="game-shell" aria-label="Tic-tac-toe game">
+        <div class="game-topline">
+          <div>
+            <p class="eyebrow">STATE OF PLAY</p>
+            <p id="status" class="status" aria-live="polite">Your move. The house plays it straight.</p>
+          </div>
+          <div class="turn-pill"><span id="turn-dot"></span><span id="turn-label">YOUR TURN</span></div>
+        </div>
+
+        <div class="game-grid">
+          <div>
+            <div id="board" class="board" role="grid" aria-label="Tic-tac-toe board">
+              <button type="button" role="gridcell" data-cell="0" aria-label="Top left, empty"></button>
+              <button type="button" role="gridcell" data-cell="1" aria-label="Top center, empty"></button>
+              <button type="button" role="gridcell" data-cell="2" aria-label="Top right, empty"></button>
+              <button type="button" role="gridcell" data-cell="3" aria-label="Middle left, empty"></button>
+              <button type="button" role="gridcell" data-cell="4" aria-label="Center, empty"></button>
+              <button type="button" role="gridcell" data-cell="5" aria-label="Middle right, empty"></button>
+              <button type="button" role="gridcell" data-cell="6" aria-label="Bottom left, empty"></button>
+              <button type="button" role="gridcell" data-cell="7" aria-label="Bottom center, empty"></button>
+              <button type="button" role="gridcell" data-cell="8" aria-label="Bottom right, empty"></button>
+            </div>
+            <button id="new-game" class="new-game" type="button">START A CLEAN GAME <span>↗</span></button>
+          </div>
+
+          <aside class="scorecard" aria-label="Score and play log">
+            <div class="score-head">
+              <p class="label">OFFICIAL SCORE</p>
+              <span>MATCH #<span id="match-number">001</span></span>
+            </div>
+            <div class="scores">
+              <div><span>YOU</span><strong id="player-score">0</strong></div>
+              <div class="house-score"><span>THE HOUSE</span><strong id="ai-score">0</strong></div>
+              <div><span>DRAWS</span><strong id="draw-score">0</strong></div>
+            </div>
+            <p class="fine-print">* Scores certified by the House Department of Scoring. First honest certification in House history.</p>
+            <div class="log-head"><p class="label">PLAY LOG</p><span id="move-count">0 moves</span></div>
+            <ol id="move-log" class="move-log" aria-live="polite">
+              <li class="empty-log">No moves yet.<br /><span>The board is clean.</span></li>
+            </ol>
+            <button id="audit" class="audit" type="button">REQUEST AN AUDIT</button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>BUILT WITH ARTIFICIAL <s>INSECURITY</s> INTEGRITY</p>
+      <p>© <span id="year"></span> THE FAIR HOUSE · ALL RIGHTS RESERVED, HONESTLY</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
