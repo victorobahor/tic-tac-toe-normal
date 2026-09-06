@@ -5,6 +5,7 @@ Usage: python3 e2e.py [N_GAMES] [--headed]
 Writes logs/e2e-results.json; exit 0 only if zero failures.
 """
 import json
+import os
 import random
 import sys
 import time
@@ -13,7 +14,7 @@ from playwright.sync_api import sync_playwright
 
 N = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 30
 HEADLESS = "--headed" not in sys.argv
-BASE = "http://127.0.0.1:8080"
+BASE = os.environ.get("BASE_URL", "http://127.0.0.1:8080")
 OUT = "/home/victor/projects/tic-tac-toe-normal/logs/e2e-results.json"
 
 LINES = [(0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6)]
