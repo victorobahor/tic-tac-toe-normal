@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4efdf" />
+    <meta name="description" content="A completely rigged game of tic-tac-toe. You are X. The house is O. The house always wins." />
+    <title>Tic Tac Cheat — The House Always Wins</title>
+    <link rel="stylesheet" href="/tic-tac-cheat/styles.css" />
+    <script type="module" src="/tic-tac-cheat/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">THINK YOU<br />CAN <span>WIN?</span></h1>
+        <p class="lede">You’re X. The house is O. Normal rules apply to you.</p>
+      </section>
+
+      <section class="game-shell" aria-label="Tic-tac-toe game">
+        <div class="game-topline">
+          <div>
+            <p id="status" class="status" aria-live="polite">Your move, hotshot.</p>
+          </div>
+          <div class="turn-pill"><span id="turn-dot"></span><span id="turn-label">YOUR TURN</span></div>
+        </div>
+
+        <div class="game-grid">
+          <div>
+            <div id="board" class="board" role="grid" aria-label="Tic-tac-toe board">
+              <button type="button" role="gridcell" data-cell="0" aria-label="Top left, empty"></button>
+              <button type="button" role="gridcell" data-cell="1" aria-label="Top center, empty"></button>
+              <button type="button" role="gridcell" data-cell="2" aria-label="Top right, empty"></button>
+              <button type="button" role="gridcell" data-cell="3" aria-label="Middle left, empty"></button>
+              <button type="button" role="gridcell" data-cell="4" aria-label="Center, empty"></button>
+              <button type="button" role="gridcell" data-cell="5" aria-label="Middle right, empty"></button>
+              <button type="button" role="gridcell" data-cell="6" aria-label="Bottom left, empty"></button>
+              <button type="button" role="gridcell" data-cell="7" aria-label="Bottom center, empty"></button>
+              <button type="button" role="gridcell" data-cell="8" aria-label="Bottom right, empty"></button>
+            </div>
+            <button id="new-game" class="new-game" type="button">START ANOTHER RIGGED GAME <span>↗</span></button>
+          </div>
+
+          <aside class="scorecard" aria-label="Score and incident log">
+            <div class="score-head">
+              <p class="label">OFFICIAL SCORE</p>
+              <span>MATCH #<span id="match-number">001</span></span>
+            </div>
+            <div class="scores">
+              <div><span>YOU</span><strong id="player-score">0</strong></div>
+              <div class="house-score"><span>THE HOUSE</span><strong id="ai-score">0</strong></div>
+            </div>
+            <div class="fine-print">* Score certified by the House Department of Scoring.</div>
+            <div class="log-head"><p class="label">INCIDENT REPORT</p><span id="incident-count">0 violations</span></div>
+            <ol id="incident-log" class="incident-log" aria-live="polite">
+              <li class="empty-log">Nothing suspicious yet.<br /><span>Give it a second.</span></li>
+            </ol>
+            <button id="appeal" class="appeal" type="button">FILE AN APPEAL</button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>BUILT WITH ARTIFICIAL <s>INTELLIGENCE</s> INSECURITY</p>
+      <p>© <span id="year"></span> THE HOUSE · ALL RIGHTS REASSIGNED</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

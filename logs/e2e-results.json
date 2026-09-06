@@ -1,0 +1,315 @@
+{
+  "games": [
+    {
+      "index": 0,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 1,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 2,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 3,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 4,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 5,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 6,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 7,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 8,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 9,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 10,
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": {
+        "you": 0,
+        "house": 0,
+        "draws": 1
+      }
+    },
+    {
+      "index": 11,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 12,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 13,
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": {
+        "you": 0,
+        "house": 0,
+        "draws": 1
+      }
+    },
+    {
+      "index": 14,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 15,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 16,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 17,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 18,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 19,
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": {
+        "you": 0,
+        "house": 0,
+        "draws": 1
+      }
+    },
+    {
+      "index": 20,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 21,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 22,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 23,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 24,
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": {
+        "you": 0,
+        "house": 0,
+        "draws": 1
+      }
+    },
+    {
+      "index": 25,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 26,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 27,
+      "plies": 6,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    },
+    {
+      "index": 28,
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": {
+        "you": 0,
+        "house": 0,
+        "draws": 1
+      }
+    },
+    {
+      "index": 29,
+      "plies": 8,
+      "outcome": "house",
+      "score_after": {
+        "you": 0,
+        "house": 1,
+        "draws": 0
+      }
+    }
+  ],
+  "ui": {
+    "audit_ok": true,
+    "mobile_overflow_px": 0,
+    "title": "Tic Tac Fair \u2014 Nobody Cheats"
+  },
+  "violations": [],
+  "outcomes": {
+    "you": 0,
+    "house": 25,
+    "draw": 5
+  }
+}
