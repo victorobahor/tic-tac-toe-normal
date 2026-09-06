@@ -43,6 +43,13 @@ h1 span { color: var(--green); }
 .turn-pill { display: flex; align-items: center; gap: 0.65rem; min-width: 145px; padding: 0.8rem 1rem; color: var(--paper); background: var(--ink); font: 500 0.66rem/1 "DM Mono", monospace; }
 .turn-pill > span:first-child { width: 8px; height: 8px; background: var(--yellow); border-radius: 50%; }
 .turn-pill.ai > span:first-child { background: var(--red); }
+.topline-right { display: flex; align-items: center; gap: 1rem; }
+.mode-switch { display: flex; }
+.mode-btn { padding: 0.8rem 0.9rem; background: transparent; border: 2px solid var(--ink); border-right-width: 0; font: 500 0.62rem/1 "DM Mono", monospace; letter-spacing: 0.06em; cursor: pointer; }
+.mode-btn:last-child { border-right-width: 2px; }
+.mode-btn:hover { background: var(--yellow); }
+.mode-btn.active { color: var(--paper); background: var(--ink); }
+.mode-btn.active:hover { background: var(--ink); }
 
 .game-grid { display: grid; grid-template-columns: minmax(440px, 1.25fr) minmax(320px, 0.75fr); }
 .game-grid > div { padding: clamp(2rem, 5vw, 5rem); border-right: 2px solid var(--ink); }
@@ -102,6 +109,8 @@ footer p { margin: 0; }
   .intro::after { right: -10vw; }
   .lede { margin-left: 0; }
   .game-topline { min-height: 125px; align-items: flex-start; flex-direction: column; gap: 1.2rem; padding: 1.5rem 1.2rem; }
+  .topline-right { align-self: stretch; justify-content: space-between; }
+  .mode-btn { padding: 0.7rem 0.55rem; font-size: 0.56rem; }
   .game-grid > div, .scorecard { padding: 1.5rem 1.2rem; }
   .board { box-shadow: 7px 7px 0 var(--green); }
   footer { align-items: flex-start; flex-direction: column; }

@@ -1,4 +1,4 @@
-import { planTurn, winner } from '../app/rules.js';
+import { planTurn, winner } from '../docs/rules.js';
 
 const empties = board => board.map((v, i) => (v === null ? i : null)).filter(i => i !== null);
 let failures = 0;
@@ -139,7 +139,34 @@ for (let rep = 0; rep < 500; rep += 1) {
   }
 }
 
+// 7 — CASUAL house: still fully legal, but genuinely beatable
+const casual = { xWins: 0, oWins: 0, draws: 0 };
+let casualLegal = true;
+for (let rep = 0; rep < 500; rep += 1) {
+  let board = Array(9).fill(null);
+  for (let guard = 0; guard < 9; guard += 1) {
+    if (winner(board, 'X')) { casual.xWins += 1; break; }
+    if (winner(board, 'O')) { casual.oWins += 1; break; }
+    if (!board.includes(null)) { casual.draws += 1; break; }
+    const e = empties(board);
+    board[e[Math.floor(Math.random() * e.length)]] = 'X';
+    if (winner(board, 'X')) { casual.xWins += 1; break; }
+    if (!board.includes(null)) { casual.draws += 1; break; }
+    const before = [...board];
+    const step = planTurn(before, true).steps[0];
+    const changedCount = step.board.reduce((n, v, i) => n + (v !== before[i] ? 1 : 0), 0);
+    const filled = step.board.findIndex((v, i) => v !== before[i]);
+    if (changedCount !== 1 || before[filled] !== null || step.board[filled] !== 'O') casualLegal = false;
+    board = [...step.board];
+    if (winner(board, 'O')) { casual.oWins += 1; break; }
+    if (!board.includes(null)) { casual.draws += 1; break; }
+  }
+}
+assert(casualLegal, 'casual: house made an illegal move');
+assert(casual.xWins > 0, 'casual: X never wins — mode is not beatable');
+
 console.log(`perfect-X series : X ${perfect.xWins} · O ${perfect.oWins} · draws ${perfect.draws}`);
 console.log(`random-X series  : X ${random.xWins} · O ${random.oWins} · draws ${random.draws}  (of 500)`);
+console.log(`casual series    : X ${casual.xWins} · O ${casual.oWins} · draws ${casual.draws}  (of 500)`);
 console.log(failures === 0 ? 'ALL ENGINE TESTS PASSED' : `${failures} FAILURES`);
 process.exit(failures === 0 ? 0 : 1);

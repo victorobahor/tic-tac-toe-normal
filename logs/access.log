@@ -553,3 +553,7 @@
 192.168.4.164 - - [05/Sep/2026:23:59:31 +0000] "GET /rules.js HTTP/1.1" 200 1795 "http://192.168.4.231:8080/app.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" "-"
 192.168.4.164 - - [05/Sep/2026:23:59:31 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://192.168.4.231:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" "-"
 172.17.0.1 - - [06/Sep/2026:00:02:56 +0000] "GET / HTTP/1.1" 200 4488 "-" "curl/8.5.0" "-"
+192.168.4.164 - - [06/Sep/2026:00:08:08 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" "-"
+192.168.4.164 - - [06/Sep/2026:00:08:08 +0000] "GET /styles.css HTTP/1.1" 304 0 "http://192.168.4.231:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" "-"
+192.168.4.164 - - [06/Sep/2026:00:08:08 +0000] "GET /app.js HTTP/1.1" 304 0 "http://192.168.4.231:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" "-"
+192.168.4.164 - - [06/Sep/2026:00:08:08 +0000] "GET /rules.js HTTP/1.1" 304 0 "http://192.168.4.231:8080/app.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" "-"

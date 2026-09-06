@@ -11,6 +11,28 @@ export function winner(board, mark) {
 
 const empties = board => board.map((value, index) => (value === null ? index : null)).filter(index => index !== null);
 
+function findWinningCell(board, mark) {
+  for (const line of LINES) {
+    const owned = line.filter(index => board[index] === mark);
+    const open = line.filter(index => board[index] === null);
+    if (owned.length === 2 && open.length === 1) return open[0];
+  }
+  return null;
+}
+
+// CASUAL house: mostly random, occasionally attentive. Still 100% honest —
+// it only ever fills one empty cell — but it is genuinely beatable.
+function casualMove(board) {
+  if (Math.random() < 0.35) {
+    const win = findWinningCell(board, 'O');
+    if (win !== null) return win;
+    const block = findWinningCell(board, 'X');
+    if (block !== null) return block;
+  }
+  const open = empties(board);
+  return open[Math.floor(Math.random() * open.length)];
+}
+
 // Best achievable value for `mover` from this position: +1 win, 0 draw, -1 loss.
 function minimax(board, mover) {
   if (winner(board, 'O')) return 1;
@@ -44,9 +66,9 @@ function chooseMove(board) {
   return picks[Math.floor(Math.random() * picks.length)];
 }
 
-export function planTurn(board) {
+export function planTurn(board, casual = false) {
   if (!board.includes(null)) return { kind: 'none', steps: [] };
-  const index = chooseMove(board);
+  const index = casual ? casualMove(board) : chooseMove(board);
   const next = [...board];
   next[index] = 'O';
   return { kind: 'move', steps: [{ board: next, changed: [index] }] };

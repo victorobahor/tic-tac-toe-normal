@@ -34,7 +34,14 @@
             <p class="eyebrow">STATE OF PLAY</p>
             <p id="status" class="status" aria-live="polite">Your move. The house plays it straight.</p>
           </div>
-          <div class="turn-pill"><span id="turn-dot"></span><span id="turn-label">YOUR TURN</span></div>
+          <div class="topline-right">
+            <div class="turn-pill"><span id="turn-dot"></span><span id="turn-label">YOUR TURN</span></div>
+            <div class="mode-switch" role="group" aria-label="Game mode">
+              <button id="mode-house-perfect" class="mode-btn" type="button">PERFECT HOUSE</button>
+              <button id="mode-house-casual" class="mode-btn" type="button">CASUAL HOUSE</button>
+              <button id="mode-two" class="mode-btn" type="button">TWO PLAYERS</button>
+            </div>
+          </div>
         </div>
 
         <div class="game-grid">
@@ -59,8 +66,8 @@
               <span>MATCH #<span id="match-number">001</span></span>
             </div>
             <div class="scores">
-              <div><span>YOU</span><strong id="player-score">0</strong></div>
-              <div class="house-score"><span>THE HOUSE</span><strong id="ai-score">0</strong></div>
+              <div><span id="label-you">YOU</span><strong id="player-score">0</strong></div>
+              <div class="house-score"><span id="label-house">THE HOUSE</span><strong id="ai-score">0</strong></div>
               <div><span>DRAWS</span><strong id="draw-score">0</strong></div>
             </div>
             <p class="fine-print">* Scores certified by the House Department of Scoring. First honest certification in House history.</p>

@@ -2,303 +2,213 @@
   "games": [
     {
       "index": 0,
+      "mode": "perfect",
       "plies": 6,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 1,
+      "mode": "casual",
       "plies": 6,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 2,
-      "plies": 6,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "two",
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": null
     },
     {
       "index": 3,
+      "mode": "perfect",
       "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 4,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "casual",
+      "plies": 9,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 5,
-      "plies": 6,
+      "mode": "two",
+      "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 6,
+      "mode": "perfect",
       "plies": 6,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 7,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "casual",
+      "plies": 9,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 8,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "two",
+      "plies": 9,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 9,
-      "plies": 6,
+      "mode": "perfect",
+      "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 10,
-      "plies": 9,
-      "outcome": "draw",
-      "score_after": {
-        "you": 0,
-        "house": 0,
-        "draws": 1
-      }
+      "mode": "casual",
+      "plies": 8,
+      "outcome": "house",
+      "score_after": null
     },
     {
       "index": 11,
-      "plies": 6,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "two",
+      "plies": 7,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 12,
-      "plies": 8,
+      "mode": "perfect",
+      "plies": 6,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 13,
-      "plies": 9,
-      "outcome": "draw",
-      "score_after": {
-        "you": 0,
-        "house": 0,
-        "draws": 1
-      }
+      "mode": "casual",
+      "plies": 8,
+      "outcome": "house",
+      "score_after": null
     },
     {
       "index": 14,
+      "mode": "two",
       "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 15,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "perfect",
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": null
     },
     {
       "index": 16,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "casual",
+      "plies": 9,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 17,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "two",
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": null
     },
     {
       "index": 18,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "perfect",
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": null
     },
     {
       "index": 19,
+      "mode": "casual",
       "plies": 9,
-      "outcome": "draw",
-      "score_after": {
-        "you": 0,
-        "house": 0,
-        "draws": 1
-      }
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 20,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "two",
+      "plies": 7,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 21,
-      "plies": 6,
+      "mode": "perfect",
+      "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 22,
-      "plies": 6,
+      "mode": "casual",
+      "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 23,
+      "mode": "two",
       "plies": 6,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 24,
-      "plies": 9,
-      "outcome": "draw",
-      "score_after": {
-        "you": 0,
-        "house": 0,
-        "draws": 1
-      }
+      "mode": "perfect",
+      "plies": 6,
+      "outcome": "house",
+      "score_after": null
     },
     {
       "index": 25,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "casual",
+      "plies": 9,
+      "outcome": "you",
+      "score_after": null
     },
     {
       "index": 26,
-      "plies": 8,
-      "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "mode": "two",
+      "plies": 9,
+      "outcome": "draw",
+      "score_after": null
     },
     {
       "index": 27,
+      "mode": "perfect",
       "plies": 6,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     },
     {
       "index": 28,
-      "plies": 9,
-      "outcome": "draw",
-      "score_after": {
-        "you": 0,
-        "house": 0,
-        "draws": 1
-      }
+      "mode": "casual",
+      "plies": 8,
+      "outcome": "house",
+      "score_after": null
     },
     {
       "index": 29,
+      "mode": "two",
       "plies": 8,
       "outcome": "house",
-      "score_after": {
-        "you": 0,
-        "house": 1,
-        "draws": 0
-      }
+      "score_after": null
     }
   ],
   "ui": {
@@ -308,8 +218,8 @@
   },
   "violations": [],
   "outcomes": {
-    "you": 0,
-    "house": 25,
-    "draw": 5
+    "house": 17,
+    "draw": 5,
+    "you": 8
   }
 }
