@@ -10,22 +10,24 @@ plays 100% fair** — and that's the gag.
   incident log — it's just a play log, because nothing suspicious ever happens.
 - Scores (you / house / draws) persist in `localStorage` across matches.
 
+## Game modes
+
+- **PERFECT HOUSE** — minimax-perfect O. Never loses; the best you can do is draw.
+- **CASUAL HOUSE** — mostly random, occasionally attentive. Fully honest, but
+  genuinely beatable (engine tests: X wins ~44% vs casual).
+- **TWO PLAYERS** — local turn-based hot-seat: X then O, no house at all.
+
+"START A CLEAN GAME" resets the board and bumps the match number.
+
 ## Run
 
-Static site, no build step. Serve the `app/` folder with any static server.
+Static site, no build step. Serve the `docs/` folder with any static server.
 
-Current hosting on this machine — Docker nginx, survives reboots, serves the
-folder read-only live from disk (edit `app/` and refresh):
+Public: **https://victorobahor.github.io/tic-tac-toe-normal/** (GitHub Pages,
+built from `docs/` on `main`).
 
-```bash
-docker run -d --name tic-tac-fair --restart unless-stopped -p 8080:80 \
-  --read-only --tmpfs /var/cache/nginx:rw --tmpfs /var/run:rw \
-  -v "$PWD/app":/usr/share/nginx/html:ro \
-  -v "$PWD/logs":/var/log/nginx nginx:alpine
-```
-
-- LAN URL: `http://192.168.4.231:8080` (from any device on the network)
-- Local: `http://127.0.0.1:8080`
+The LAN Docker host is currently stopped (`docker start tic-tac-fair` to
+re-enable at `http://192.168.4.231:8080`; it serves the folder live from disk).
 
 ## Files
 
